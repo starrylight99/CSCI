@@ -13,7 +13,7 @@ def mopping():
     logging.info("data sent for evaluation {}".format(data))
     result = cleanfloor(data["tests"])
     logging.info("My result :{}".format(result))
-    return jsonify({"answers":result);
+    return jsonify({"answers":result});
 
 def cleanfloor(dictionary):
         solution = {}

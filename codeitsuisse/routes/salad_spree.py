@@ -15,7 +15,7 @@ def evaluateSalad():
     saladList = data.get("salad_prices_street_map");
     result = leastCostCombination(numberValue,saladList)
     logging.info("My result :{}".format(result))
-    return jsonify(result);
+    return jsonify({"result":result});
 
 def leastCostCombination(n,S):
     validmethods = []
